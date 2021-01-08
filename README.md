@@ -2,6 +2,10 @@
 
 ![build passing](https://travis-ci.org/big-unibo/experimental-project.svg?branch=master)
 
+  docker run --name=linux --rm -v ${pwd}:/repos -it -p9092:9092 -p2181:2181 -p2888:2888 -p3888:3888 mfrancia:linux
+  cd repos/script
+  -/start-kafka.sh
+
 ## How to run the project
 
 - Change `rootProject.name` in `settings.gradle` accordingly to the project name
